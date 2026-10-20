@@ -24,7 +24,7 @@ p {
 }
 
 .div_head_container {
-  height: 80vh;
+  height: 60vh;
   background-image: url("./pancack_recipe.jpg");
   background-size: cover;
   background-repeat: no-repeat;
@@ -55,7 +55,7 @@ image {
 }
 
 .div_foot_left {
-  height: 60vh;
+  height: 40vh;
   width: 50%;
   background-image: url("./pancake1.png");
   background-size: cover;
@@ -64,7 +64,7 @@ image {
 }
 
 .div_foot_right {
-  height: 60vh;
+  height: 40vh;
   width: 50%;
   background-image: url("./pancake2.png");
   background-size: cover;
