@@ -4,25 +4,15 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-}
-h1,
-h2,
-h3 {
-  font-family: "Roboto", sans-serif;
-}
-h1,
-h2 {
-  color: var(--fc-dark);
-}
-
-p {
-  font-size: 1.2rem;
   font-family: "Open Sans", sans-serif;
 }
+
 .body_container {
       background-color: #DCACAC;
 }
-
+li {
+  margin: 10px 0;
+}
 .div_head_container {
   height: 60vh;
   background-image: url("./pancack_recipe.jpg");
@@ -52,11 +42,13 @@ image {
 .div_footer_container {
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
+  padding: 10px 40px;
 }
 
 .div_foot_left {
-  height: 40vh;
-  width: 50%;
+  height: 30vh;
+  width: 49%;
   background-image: url("./pancake1.png");
   background-size: cover;
   background-repeat: no-repeat;
@@ -64,8 +56,8 @@ image {
 }
 
 .div_foot_right {
-  height: 40vh;
-  width: 50%;
+  height: 30vh;
+  width: 49%;
   background-image: url("./pancake2.png");
   background-size: cover;
   background-repeat: no-repeat;
