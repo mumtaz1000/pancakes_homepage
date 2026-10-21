@@ -63,3 +63,17 @@ image {
   background-repeat: no-repeat;
   background-position: center center;
 }
+
+@media (max-width: 600px) {
+  .div_footer_container {
+    flex-direction: column;
+    padding: 5px 0;
+    justify-content: center;
+  }
+  .div_foot_left,
+  .div_foot_right { 
+    height: 30vh;
+  width: 100%;
+  margin-bottom: 10px;
+  }
+}
