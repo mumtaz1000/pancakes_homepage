@@ -64,7 +64,11 @@ image {
   background-position: center center;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 800px) {
+  .ingredient_container {
+    width: 100%;
+    margin-bottom: 20px;
+  }
   .div_footer_container {
     flex-direction: column;
     padding: 5px 0;
