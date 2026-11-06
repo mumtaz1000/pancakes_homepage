@@ -4,12 +4,14 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" type="text/css" />
-    <title>Home Page</title>
+    <title>Pancake Recipt</title>
   </head>
   <body class="body_container">
     <div class="ingredient_container">
-      <div class="div_head_container"></div>
-      <div class="div_body_container">
+      <section class="div_head_container"
+      aria-labelledby="section-pancake-poster-picture "></section>
+      <section class="div_body_container"
+      aria-labelledby="section-pancake-recipe">
         <h2 style="color: #A10000;">Enkelt recept på pannkakor</h2>
         <br />
         <p style="background-color: #EBEBEB; padding: 10px;">
@@ -43,16 +45,16 @@
           </li>
           <li>Servera med sylt, bär eller frukt</li>
         </ol>
-      </div>
+      </section>
 
-      <div >
+      <section aria-labelledby="section-pancake-serving-suggestion-pictures">
         <div style="padding: 0px 40px;">
             <h3>Srveringsförslag</h3></div>
         <div class="div_footer_container">
-          <div class="div_foot_left"></div>
-          <div class="div_foot_right"></div>
+          <div class="div_foot_left" aria-labelledby="section-pancake-serving-suggestion-left-side-picture"></div>
+          <div class="div_foot_right" aria-labelledby="section-pancake-serving-suggestion-right-side-picture"></div>
         </div>
-      </div>
+      </section>
     </div>
   </body>
 </html>
