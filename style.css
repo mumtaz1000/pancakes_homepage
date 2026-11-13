@@ -37,6 +37,22 @@ image {
 .div_body_container {
       padding: 40px;
       background-color: #FCFCFC;
+      h2 {
+        color: #A10000
+      }
+      p {
+        background-color: #EBEBEB; 
+        padding: 10px;
+      }
+      ul, ol {
+        padding-left: 1.5em
+      }
+}
+
+#pancake-serving-suggestion-pictures {
+  div:first-child {
+    padding: 0px 40px;
+  }
 }
 
 .div_footer_container {
