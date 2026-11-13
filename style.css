@@ -7,8 +7,15 @@
   font-family: "Open Sans", sans-serif;
 }
 
+.root {
+  --bg-color: #DCACAC;
+  --white-color: #FCFCFC;
+  --red-color: #A10000;
+  --grey-color: #EBEBEB; 
+}
+
 .body_container {
-      background-color: #DCACAC;
+      background-color: var(--bg-color);
 }
 li {
   margin: 10px 0;
@@ -25,7 +32,7 @@ li {
       width: 80%;
       margin-left: auto;
       margin-right: auto;
-      background-color: #FCFCFC;
+      background-color: var(--white-color);
       display: flex;
       flex-direction: column;
 }
@@ -36,12 +43,12 @@ image {
 
 .div_body_container {
       padding: 40px;
-      background-color: #FCFCFC;
+      background-color: var(--white-color);
       h2 {
-        color: #A10000
+        color: var(--red-color)
       }
       p {
-        background-color: #EBEBEB; 
+        background-color: var(--grey-color); 
         padding: 10px;
       }
       ul, ol {
