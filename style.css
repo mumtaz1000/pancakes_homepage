@@ -19,7 +19,32 @@
 
 body {
       background-color: var(--bg-color);
+      display: flex;
+      flex-direction: column;
 }
+.site-header {
+    padding: 0.8em;
+    
+    li {
+            list-style-type: none;
+            a {
+              text-decoration: none;
+              color: black;
+            }
+            a:hover {
+              color: var(--red-color);
+            }
+        }
+    
+}
+
+.nav-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding-left: 20px;
+}
+
 li {
   margin: 10px 0;
 }
@@ -37,13 +62,14 @@ img {
   max-inline-size: 100%;
 }
 
-main {
+main,
+.site-header,
+.site-footer {
       width: 80%;
       margin-left: auto;
       margin-right: auto;
       background-color: var(--white-color);
-      display: flex;
-      flex-direction: column;
+      
 }
 
 .recipe {
@@ -97,5 +123,9 @@ h3,
   .serving-image-wrapper {
     margin-bottom: 0.8em;
   }
-  
+}
+
+.site-footer {
+  padding: 0.8em;
+ text-align: center;
 }
