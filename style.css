@@ -1,34 +1,43 @@
+/* Css reset on whole web page*/
+* {
+  margin: 0;
+}
+
 *,
 ::before,
 ::after {
   box-sizing: border-box;
-  margin: 0;
-  padding: 0;
   font-family: "Open Sans", sans-serif;
 }
 
-.root {
+:root {
   --bg-color: #DCACAC;
   --white-color: #FCFCFC;
   --red-color: #A10000;
   --grey-color: #EBEBEB; 
 }
 
-.body_container {
+body {
       background-color: var(--bg-color);
 }
 li {
   margin: 10px 0;
 }
-.div_head_container {
-  height: 60vh;
-  background-image: url("./pancack_recipe.jpg");
+.image-wrapper{
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
+  margin-bottom: 0.8em;
 }
 
-.ingredient_container {
+img {
+  display: block;
+  object-fit: cover;
+  min-width: 100%;
+  max-inline-size: 100%;
+}
+
+main {
       width: 80%;
       margin-left: auto;
       margin-right: auto;
@@ -37,69 +46,56 @@ li {
       flex-direction: column;
 }
 
-image {
-      max-inline-size: 100%;
-}
-
-.div_body_container {
-      padding: 40px;
+.recipe {
       background-color: var(--white-color);
+      padding: 0.8em;
       h2 {
-        color: var(--red-color)
+        color: var(--red-color);
+        margin-bottom: 0.8em;
       }
-      p {
+      
+      .highligted-text {
         background-color: var(--grey-color); 
-        padding: 10px;
+        padding: 0.8em;
       }
-      ul, ol {
-        padding-left: 1.5em
+      article {
+        padding: 0.8em
       }
 }
 
-#pancake-serving-suggestion-pictures {
-  div:first-child {
-    padding: 0px 40px;
-  }
+h3,
+.suggestion-title {
+  margin-bottom: 0.8em;
 }
 
-.div_footer_container {
+.suggestion-title {
+  padding-left: 0.8em;
+}
+
+.serving-suggestions {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  padding: 10px 40px;
+  width: 400;
+  margin-top: 0.8em;
 }
 
-.div_foot_left {
-  height: 60vh;
-  width: 49%;
-  background-image: url("./pancake1.png");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center center;
-}
-
-.div_foot_right {
-  height: 60vh;
-  width: 49%;
-  background-image: url("./pancake2.png");
+.serving-image-wrapper {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
 }
 
 @media (max-width: 800px) {
-  .ingredient_container {
-    width: 100%;
-    margin-bottom: 20px;
-  }
-  .div_footer_container {
+
+  .serving-suggestions {
     flex-direction: column;
-    padding: 5px 0;
     justify-content: center;
   }
-  .div_foot_left,
-  .div_foot_right { 
-  width: 100%;
-  margin-bottom: 10px;
+
+  .ingredient_container,
+  .serving-image-wrapper {
+    margin-bottom: 0.8em;
   }
+  
 }

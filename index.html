@@ -1,30 +1,28 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" type="text/css" />
-    <title>Pancake Recipt</title>
-  </head>
-  <body class="body_container">
-    <div class="ingredient_container">
-      <section class="div_head_container"
-      id="pancake-poster"
-      aria-labelledby="pancake-poster"></section>
-      <section class="div_body_container"
-      id="pancake-recipe"
-      aria-labelledby="pancake-recipe">
-        <h2>Enkelt recept på pannkakor</h2>
-        <br />
-        <p>
-          Gör traditionella tunna pannkakor med detta enkla och goda
-          pannkaksrecept.
-        </p>
-        <br />
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" type="text/css" />
+  <title>Pancake Recipt</title>
+</head>
+
+<body>
+
+  <main>
+    <div class="image-wrapper">
+      <img src="./pancack_recipe.jpg" alt="Pancake sample picture" width="400">
+    </div>
+    <section class="recipe">
+      <h2>Enkelt recept på pannkakor</h2>
+      <p class="highligted-text">
+        Gör traditionella tunna pannkakor med detta enkla och goda
+        pannkaksrecept.
+      </p>
+      <article>
         <h3>Ingredienser</h3>
-        <br />
         <p>För 4 portioner</p>
-        <br />
         <ul>
           <li>2 1/2 dl vetemjöl</li>
           <li>1/2 tsk salt</li>
@@ -33,9 +31,9 @@
           <li>smör (till stekning)</li>
           <li>sylt, bär eller frukt till servering</li>
         </ul>
-        <br />
+      </article>
+      <article>
         <h3>Så här gör du</h3>
-        <br />
         <ol>
           <li>Blanda mjöl och salt i en bunke.</li>
           <li>Vispa i hälften av mjölken och vispa till en slät smet.</li>
@@ -47,22 +45,23 @@
           </li>
           <li>Servera med sylt, bär eller frukt</li>
         </ol>
-      </section>
+      </article>
 
-      <section 
-      id="pancake-serving-suggestion-pictures"
-      aria-labelledby="pancake-serving-suggestion-pictures">
-        <div>
-            <h3>Srveringsförslag</h3></div>
-        <div class="div_footer_container">
-          <div class="div_foot_left" 
-          id="pancake-serving-picture"
-          aria-labelledby="pancake-serving-picture"></div>
-          <div class="div_foot_right" 
-          id="pancake-serving-picture"
-          aria-labelledby="pancake-serving-picture"></div>
+    </section>
+
+    <section>
+      <h3 class="suggestion-title">Serveringsförslag</h3>
+      <div class="serving-suggestions">
+        <div class="serving-image-wrapper">
+          <img src="./pancake1.png" alt="Pancake serving image" />
         </div>
-      </section>
-    </div>
-  </body>
+        <div class="serving-image-wrapper">
+          <img src="./pancake2.png" alt="Pancake serving image" />
+        </div>
+      </div>
+    </section>
+
+  </main>
+</body>
+
 </html>
