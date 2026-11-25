@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" type="text/css" />
+  <title>Kontakta Oss</title>
+</head>
+
+<body>
+
+  <header class="site-header" id="top">
+      <nav aria-label="Huvudnavigation">
+        <ul class="nav-list">
+          <li><a href="index.html">Hemsidan</a></li>
+          <li><a href="contact.html">Kontakt</a></li>
+
+        </ul>
+      </nav>
+    </header>
+
+  <main>
+    <div class="image-wrapper">
+      <img src="./pancack_recipe.jpg" alt="Pancake sample picture" width="400">
+    </div>
+    <section class="recipe">
+      <h2>Anmäl dig till vår workshop</h2>
+      <form action="" method="get">
+        <div>
+          <label for="name">Namn</label>
+          <input type="text" name="name" id="name" 
+          aria-describedby="name-help" placeholder="John Doe"
+          required minlength="6" maxlength="30" autocomplete="name">
+          <p id="name-help">Ange ditt för- och efternam</p>
+        </div>
+
+        <div>
+          <label for="email">E-postadress</label>
+          <input type="email" name="email" id="email" placeholder="example@gmail.com"
+          required autocomplete="email">
+        </div>
+
+        <div>
+          <input type="checkbox" id="newsletter" name="newsletter" value="yes" checked>
+          <label for="newsletter">
+            Jag vill få information om kommande workshops
+          </label>
+        </div>
+
+        <fieldset>
+          <legend>Vilken erfarenhetsnivå har du?</legend>
+          <div>
+            <input type="radio" id="beginner" name="experience" value="beginner">
+            <label for="beginner">Nybörjare</label>
+          </div>
+          <div>
+            <input type="radio" name="experience" id="intermediate" value="intermediate">
+            <label for="intermediate">Har lite erfarenhet</label>
+          </div>
+          <div>
+            <input type="radio" name="experience" id="advanced" value="advanced">
+            <label for="advanced">Erfaren</label>
+          </div>
+        </fieldset>
+
+        <div>
+          <label for="workshop">Välj workshop</label>
+          <select name="workshop" id="workshop">
+            <option value="">Välj ett alternativ</option>
+            <option value="baking">Bakning</option>
+            <option value="cooking">Mat laggning</option>
+            <option value="desert">Sötta saker</option>
+          </select>
+        </div>
+
+        <div>
+          <label for="message">Överig information</label>
+          <textarea name="message" id="message" rows="4" cols="40" required></textarea>
+        </div>
+
+        <button type="submit">Skicka anmälan</button>
+      </form>
+     
+      
+
+    </section>
+
+  </main>
+  <footer class="site-footer">
+      <h4>© DemoSite – en exempel sidan.</h4>
+    </footer>
+</body>
+
+</html>

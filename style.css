@@ -129,3 +129,52 @@ h3,
   padding: 0.8em;
  text-align: center;
 }
+
+form {
+  display: grid;
+  gap: 1.25em;
+  padding: 2em;
+  background: var(--grey-color);
+  border: 1px solid var(#ddd);
+  border-radius:8px;
+}
+
+input:not([type="checkbox"], [type="radio"]),
+select,
+textarea {
+  width: 100%;
+  padding: 0.6em;
+  border: 1px solid #888;
+  border-radius: 4px;
+}
+
+fieldset {
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 1em;
+}
+
+button {
+  padding: 0.75em 1 em;
+  cursor: pointer;
+}
+
+:focus-visible {
+  outline: 3px solif #2563eb;
+  outline-offset: 3px;
+}
+
+input:user-invalid,
+select:user-invalid,
+textarea:user-invalid {
+  border-color: #dc2626;
+}
+
+input:user-valid {
+  border-color: green;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+  accent-color: orange;
+}
